@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  background-color: #c5e4e7;
+  display: grid;
+  place-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+#logo {
+  margin: 3% auto;
+}
+
+#main {
+  margin-top: 5%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3.3rem;
+  background-color: white;
+  max-width: 92rem;
+  margin: 0 auto;
+  gap: 2rem;
+  border: none;
+  border-radius: 1rem;
+}
+.grid__item--2 {
+  background-color: #00494d;
+  padding: 2rem;
+  border: none;
+  border-radius: 1rem;
+}
+
+.bill__form {
+  max-width: 100%;
+}
+.bill__form__head {
+  color: #5e7a7d;
+}
+.bill__form__group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 30rem;
+  margin: 5% auto;
+  border: transparent;
+  padding: 0 0.5rem;
+}
+.bill__form__group img {
+  margin-right: 2%;
+}
+.bill__form__group.buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  text-align: center;
+}
+.bill__form__group.buttons input {
+  text-align: center;
+  padding: 1rem auto;
+  font-size: 2rem;
+  font-family: inherit;
+  max-width: 8rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 0.3rem;
+  background-color: transparent;
+}
+.bill__form__group.buttons input:focus {
+  text-align: right;
+  outline-color: #26c0ab;
+}
+.bill__form__control {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  text-align: right;
+  font-family: inherit;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.bill__form__control:focus {
+  outline: none;
+}
+.bill__form__control:focus .bill__form__group {
+  border: 2px solid #26c0ab;
+}
+
+.amount {
+  display: flex;
+  flex-direction: column;
+}
+.amount__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10%;
+}
+.amount .reset {
+  position: relative;
+  top: 8rem;
+}
+.amount .per {
+  display: block;
+  color: #5e7a7d;
+}
+.amount .tip__person__head,
+.amount .total__person__head {
+  color: white;
+  font-size: 1.2rem;
+}
+.amount .tip__person__price,
+.amount .total__person__price {
+  font-size: 3rem;
+  color: #26c0ab;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  font-family: inherit;
+  font-weight: 700;
+  color: white;
+  border: none;
+  border-radius: 0.3rem;
+  background: #00494d;
+  text-align: center;
+}
+.btn--tip {
+  padding: 0.5rem;
+}
+.btn.reset {
+  background-color: #0d686d;
+  color: #00494d;
+  width: 100%;
+}
+.btn:hover, .btn.reset.active {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
+@media screen and (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .amount .reset {
+    top: 0;
+  }
+}/*# sourceMappingURL=main.css.map */

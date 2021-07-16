@@ -1,0 +1,68 @@
+@use "../abstracts/" as *;
+
+.bill {
+  &__form {
+    max-width: 100%;
+    &__head {
+      color: $drk-g-cyan;
+    }
+
+    &__group {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 30rem;
+      margin: 5% auto;
+      border: transparent;
+      padding: 0 0.5rem;
+
+      img {
+        margin-right: 2%;
+      }
+
+      &.buttons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        text-align: center;
+        // place-items: center;
+
+        input {
+          text-align: center;
+          //   padding: 0;
+          //   margin: 0;
+          padding: 1rem auto;
+          font-size: 2rem;
+          font-family: inherit;
+          max-width: 8rem;
+          font-weight: 700;
+          border: none;
+          border-radius: 0.3rem;
+          background-color: transparent;
+
+          &:focus {
+            text-align: right;
+            outline-color: $clr-primary;
+          }
+        }
+      }
+    }
+    &__control {
+      width: 100%;
+      border: none;
+      background-color: transparent;
+      text-align: right;
+      font-family: inherit;
+      font-size: 2.4rem;
+      font-weight: 700;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:focus .bill__form__group {
+        border: 2px solid $clr-primary;
+      }
+    }
+  }
+}

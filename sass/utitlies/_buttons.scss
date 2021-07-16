@@ -1,0 +1,29 @@
+@use "../abstracts/" as *;
+
+.btn {
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  font-family: inherit;
+  font-weight: 700;
+  color: $white;
+  border: none;
+  border-radius: 0.3rem;
+  background: $very-drk-cyan;
+  text-align: center;
+
+  &--tip {
+    padding: 0.5rem;
+  }
+
+  &.reset {
+    background-color: #0d686d;
+    color: $very-drk-cyan;
+    width: 100%;
+  }
+
+  &:hover,
+  &.reset.active {
+    background-color: $clr-primary;
+    color: $very-drk-cyan;
+  }
+}

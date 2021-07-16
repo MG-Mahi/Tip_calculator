@@ -1,0 +1,12 @@
+@media screen and (max-width: 480px) {
+  //   html {
+  //     font-size: 48.5%;
+  //   }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .amount .reset {
+    top: 0;
+  }
+}

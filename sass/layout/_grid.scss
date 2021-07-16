@@ -1,0 +1,28 @@
+@use "../abstracts/" as *;
+
+#logo {
+  margin: 3% auto;
+}
+
+#main {
+  margin-top: 5%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3.3rem;
+  background-color: $white;
+  max-width: 92rem;
+  margin: 0 auto;
+  gap: 2rem;
+  border: none;
+  border-radius: 1rem;
+
+  &__item--2 {
+    background-color: $very-drk-cyan;
+    padding: 2rem;
+    border: none;
+    border-radius: 1rem;
+  }
+}

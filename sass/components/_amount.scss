@@ -1,0 +1,42 @@
+@use "../abstracts/" as *;
+
+.amount {
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // margin: 2% auto;
+    margin-bottom: 10%;
+  }
+
+  .reset {
+    // justify-self: flex-end;
+    position: relative;
+    top: 8rem;
+  }
+
+  .per {
+    display: block;
+    color: $drk-g-cyan;
+  }
+
+  .tip__person__head,
+  .total__person__head {
+    color: $white;
+    font-size: 1.2rem;
+  }
+
+  .tip__person__price,
+  .total__person__price {
+    font-size: 3rem;
+    color: $clr-primary;
+  }
+
+  //   .tip__person {
+  //     &__head {
+  //     }
+  //   }
+}
